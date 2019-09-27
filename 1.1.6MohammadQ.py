@@ -20,12 +20,14 @@ startx = 0
 starty = 0
 
 #
+count = 0
 for t in my_turtles:
     t.up()
     t.goto(startx, starty)
     t.down()
-    t.right(45)     
+    t.right(45*count)     
     t.forward(50)
+    count = count + 1
 
 #	
     startx = t.xcor()
